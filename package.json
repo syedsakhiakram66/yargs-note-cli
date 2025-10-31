@@ -1,0 +1,23 @@
+{
+  "name": "yargs-note-cli",
+    "bin": {
+    "note": "./index.js"
+  },
+  "version": "1.0.0",
+  "description": "basic note cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syedsakhiakram66/yargs-note-cli.git"
+  },
+  "author": "syedsakhiakram66",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syedsakhiakram66/yargs-note-cli/issues"
+  },
+  "homepage": "https://github.com/syedsakhiakram66/yargs-note-cli#readme"
+}
+
