@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-// index.js
 const note = process.argv[2];
 const newNote = {
   id: Date.now(),
