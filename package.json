@@ -1,5 +1,6 @@
 {
   "name": "yargs-note-cli",
+  "type": "module",
   "bin": {
     "note": "./index.js"
   },

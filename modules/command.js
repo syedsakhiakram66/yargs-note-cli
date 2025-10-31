@@ -1,7 +1,7 @@
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 
-yargs(hideBin(process.argv))
+const Command = yargs(hideBin(process.argv))
   .command('new <note>', 'create a new note', yargs => {
     return yargs.positional('note', {
       describe: 'The content of the note you want to create',
@@ -49,3 +49,5 @@ yargs(hideBin(process.argv))
   })
   .demandCommand(1)
   .parse()
+
+  export default Command;
