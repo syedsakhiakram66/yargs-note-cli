@@ -9,3 +9,9 @@ export const newNote = async (note, tags) => {
     await insert(data)
     return data
 }
+
+export const getAllNotes = async () => {
+    const db =  await getDB()
+    return db.notes
+}
+
