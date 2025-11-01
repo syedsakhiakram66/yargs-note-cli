@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/syedsakhiakram66/yargs-note-cli#readme",
   "dependencies": {
+    "express": "^5.1.0",
     "yargs": "^18.0.0"
   }
 }

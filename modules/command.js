@@ -1,6 +1,7 @@
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 import {newNote, getAllNotes, findNotes, removeNote, removeAllNotes} from './crud.js'
+import { startServer } from './server.js'
 
 //util
 const listNotes = (notes) => {
@@ -65,7 +66,11 @@ const Command = yargs(hideBin(process.argv))
         type: 'number'
       })
   }, async (argv) => {
-    
+    try {
+      startServer(argv.port)
+    } catch (err) {
+      console.error('Failed to start server:', err)
+    }
   })
   .command('clean', 'remove all notes', () => {}, async (argv) => {
     await removeAllNotes()
