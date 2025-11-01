@@ -1,6 +1,6 @@
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
-import {newNote, getAllNotes, findNotes, removeNote, removeAllNotes} from './notes.js'
+import {newNote, getAllNotes, findNotes, removeNote, removeAllNotes} from './crud.js'
 
 //util
 const listNotes = (notes) => {
